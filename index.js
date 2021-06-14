@@ -4,16 +4,12 @@ const fi = (function() {
        return 'Start by reading https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0'
      },
 
-     each: function() {
-
   each: function(collection, callback) {
        for(const item in collection){
          callback(collection[item], item, collection)
        }
        return collection
      },
-
-     map: function() {
 
      map: function(collection, callback) {
        const mappedArr = []
@@ -22,8 +18,6 @@ const fi = (function() {
        }
        return mappedArr
      },
-
-     reduce: function() {
 
      reduce: function(collection, callback, acc) {
        if(!(collection instanceof Array)){
@@ -38,8 +32,6 @@ const fi = (function() {
        }
        return acc
      },
-
-     functions: function() {
 
      find: function(collection, predicate) {
        return collection.find(predicate)
@@ -124,8 +116,6 @@ const fi = (function() {
          }
        }).filter((value) => value)
      },
-
-
    }
  })()
 
